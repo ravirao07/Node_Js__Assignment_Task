@@ -1,0 +1,38 @@
+.body {
+    background-image: url('https://img.freepik.com/premium-photo/book-table-with-book-top-it_974629-459842.jpg?w=826');
+    width: 100%;
+    height: 100vh; /* Full-screen height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+}
+
+
+.slider-text {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    font-size: 4rem; 
+    font-weight: bold;
+    color: #fff; 
+    white-space: nowrap; 
+    animation: continuousSlide 20s linear infinite; 
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+@keyframes continuousSlide {
+    0% { 
+        transform: translateX(100vw) translateY(-50%); 
+    }
+    100% { 
+        transform: translateX(-100vw) translateY(-50%);
+    }
+}
